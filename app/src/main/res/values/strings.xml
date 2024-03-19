@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EasyMeal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login_register">LoginRegister</string>
+    <string name="title_activity_mis_recetas">MisRecetas</string>
+    <string name="title_activity_todas_recetas">TodasRecetas</string>
+    <string name="title_activity_receta_especifica">RecetaEspecifica</string>
+    <string name="title_activity_publicity">Publicidad</string>
+    <string name="permisos_necesarios_snackbar">Permissions are required to use the application</string>
+    <string name="menu_camara_tomar_foto">Take photo</string>
+    <string name="menu_camara_galeria">Choose from gallery</string>
+    <string name="menu_camara_cancelar">Cancel</string>
+    <string name="menu_camara_elegir_opcion">Choose an option</string>
+    <string name="menu_camara_selecciona_imagen">Choose image app</string>
+    <string name="permisos_aceptados">Accepted permissions</string>
+    <string name="permisos_denegados">Permissions denied</string>
+    <string name="permisos_necesarios">To use the features of the app you need to accept the permissions</string>
+    <string name="ok">Accept</string>
+    <string name="cancelar">Cancel</string>
+    <string name="dialog_espere_porfavor">Please wait ...</string>
+    <string name="dialog_cargando">Loading...</string>
+    <string name="usuario_contraseña_correcto">Correct username and password</string>
+    <string name="usuario_contraseña_incorrecto">Incorrect username or password</string>
+    <string name="usuario_existe">Existing nickname</string>
+    <string name="registro_correcto">Correct register</string>
+    <string name="registro_incorrecto">Correct register</string>
+    <string name="tab_registro">Register</string>
+    <string name="tab_inicio_sesion">Login</string>
+    <string name="anonimo">Anonymous</string>
+    <string name="informacion">Information</string>
+    <string name="faltan_campos">Missing fields to fill or incorrect fields</string>
+    <string name="nombre_obligatorio">Name*</string>
+    <string name="apodo_4_caract">Nickname*  (min 4 char.)</string>
+    <string name="contraseña_6_caract">Password* (min 6 char.)</string>
+    <string name="confirmar_contraseña">Password confirmation*</string>
+    <string name="fecha_nacimiento">Birthdate*</string>
+    <string name="crear_cuenta">Create account</string>
+    <string name="apodo">Nickname</string>
+    <string name="contraseña">Password</string>
+    <string name="entrar_usuario">Log in</string>
+    <string name="salir_usuario">Log out</string>
+    <string name="ingredientes">Ingredients</string>
+    <string name="pasos">Steps</string>
+    <string name="menu_superior_derecha">Settings</string>
+    <string name="menu_nav_recetas">Recipes</string>
+    <string name="menu_nav_mis_recetas">My Recipes</string>
+    <string name="menu_nav_receta">Recipe</string>
+    <string name="menu_nav_cuenta">Account</string>
+    <string name="menu_nav_ajustes">Settings</string>
+    <string name="menu_nav_ayuda">Contact us</string>
+    <string name="menu_nav_sobre_nosotros">About</string>
+    <string name="custom_dialog">Application designed for DAM end-of-grade project,
+        dedicated to making it easier for users to decide what to cook.</string>
+    <string name="title_activity_sobre_nosotros">SobreNosotros</string>
+    <string name="nombre_creacion_receta">Recipe name</string>
+    <string name="desc_creacion_receta">Recipe general description</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1158964831490098/2125693763</string>
+    <string name="texto_creacion_ing">rice</string>
+    <string name="texto_creacion_pasos">Explain this step</string>
+    <string name="snackbar_no_user">You must log in to see your recipes</string>
+    <string name="quantity_new_recipe">150 grams</string>
+    <string name="ingredient_not_exist">Ingredient \'%1$s\' does not registered. Please, send us a message.</string>
+    <string name="falta_cantidad">Enter the amount for the ingredient \'%1$s\'</string>
+    <string name="recipe_correct">Recipe created</string>
+    <string name="recipe_incorrect">Recipe could not be created</string>
+    <string name="cant_register">User could no be created</string>
+    <string name="salir_new_recipe">Recipe will be lost, want to exit?</string>
+    <string name="salir_title_new_rec">Exit</string>
+    <string name="send_email">Send mail</string>
+    <string name="new_recipe_empty">Missing fields to fill out</string>
+    <string name="title_activity_ajustes">Settings</string>
+    <string name="contraseña_diferente">The password does not match</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_languages">Language</string>
+    <string-array name="pref_example_list_titles">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Portuguese</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>en</item>
+        <item>es</item>
+        <item>pt</item>
+    </string-array>
+
+    <string name="info_device">Information</string>
+</resources>

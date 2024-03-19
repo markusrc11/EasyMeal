@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_ing"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <AutoCompleteTextView
+        android:id="@+id/txtNewIng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="@string/texto_creacion_ing"
+        android:inputType="text|textCapSentences" />
+
+    <EditText
+        android:id="@+id/etNewQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/quantity_new_recipe"
+        android:inputType="text|textCapSentences|textPersonName" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_ing"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <AutoCompleteTextView
+        android:id="@+id/txtNewIng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="@string/texto_creacion_ing"
+        android:inputType="text|textCapSentences" />
+
+    <EditText
+        android:id="@+id/etNewQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/quantity_new_recipe"
+        android:inputType="text|textCapSentences|textPersonName"
+        android:maxLength="25" />
+
+    <Button
+        android:id="@+id/btnIngDelete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_delete_forever_black_24dp"
+        android:textColorLink="@android:color/transparent" />
+</LinearLayout>

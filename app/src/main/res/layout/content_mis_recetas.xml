@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.application.markus.easymeal.com.application.markus.easymeal.MisRecetas"
+    tools:showIn="@layout/activity_mis_recetas">
+
+    <ListView
+        android:id="@+id/lista_mis_recetas"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="true"
+
+        android:layout_height="match_parent" />
+
+</android.support.v4.widget.NestedScrollView>
+

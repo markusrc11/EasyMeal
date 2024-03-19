@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#004d40</color>
+    <!--<color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark1">#303F9F</color>-->
+    <color name="colorAccent">#F16600</color>
+    <color name="light_gray">#eaeaea</color>
+    <color name="list_bg">#ddf2ef</color>
+    <color name="app_bg">#a3d8d2</color>
+    <color name="username_list">#1043A0</color>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_pasos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/etLayoutPasos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="@string/texto_creacion_pasos"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="150" />
+
+    <Button
+        android:id="@+id/btnPasosDelete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_delete_forever_black_24dp"
+        android:textColorLink="@android:color/transparent" />
+</LinearLayout>

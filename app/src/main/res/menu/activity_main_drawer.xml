@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuRecetas"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="@string/menu_nav_recetas" />
+        <item
+            android:id="@+id/menu_misRecetas"
+            android:icon="@drawable/ic_list_black_24dp"
+             android:title="@string/menu_nav_mis_recetas" />
+        <item
+            android:id="@+id/menu_cuenta"
+            android:checkable="false"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="@string/menu_nav_cuenta" />
+        <item
+            android:id="@+id/menuAjustes"
+            android:checkable="false"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/menu_nav_ajustes" />
+    </group>
+
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/menuAyuda"
+                android:icon="@drawable/ic_contact_mail_black_24dp"
+                android:title="@string/menu_nav_ayuda" />
+            <item
+                android:id="@+id/menu_SobreNosotros"
+                android:icon="@drawable/ic_visibility_black_24dp"
+                android:title="@string/menu_nav_sobre_nosotros" />
+        </menu>
+    </item>
+
+</menu>
