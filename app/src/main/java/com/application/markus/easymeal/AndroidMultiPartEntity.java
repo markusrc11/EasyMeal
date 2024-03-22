@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
  
-@SuppressWarnings("deprecation")
 public class AndroidMultiPartEntity extends MultipartEntity
  
 {

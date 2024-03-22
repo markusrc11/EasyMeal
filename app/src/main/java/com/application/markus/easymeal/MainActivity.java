@@ -1,6 +1,7 @@
 package com.application.markus.easymeal;
 
 import android.annotation.TargetApi;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,16 +16,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,15 +24,22 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 import java.util.Locale;
 
 import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
     List<String> allIngredients;
     Cursor c;
     private ImageView iv;
-    InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,10 +118,7 @@ public class MainActivity extends AppCompatActivity {
                                 break;
 
                             case R.id.menuAyuda:
-                                if (mInterstitialAd.isLoaded()) {
-                                    mInterstitialAd.show();
-                                } else
-                                    enviarMail();
+                                enviarMail();
                                 break;
 
                             case R.id.menu_SobreNosotros:
@@ -150,8 +144,6 @@ public class MainActivity extends AppCompatActivity {
         );
 
         mayRequestStoragePermission();
-
-        anunci();
     }
 
     @Override
@@ -184,22 +176,6 @@ public class MainActivity extends AppCompatActivity {
             navigationView.getMenu().findItem(R.id.menu_misRecetas).setVisible(false);
     }
 
-    private void anunci()
-    {
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                requestNewInterstitial();
-                enviarMail();
-            }
-        });
-
-        requestNewInterstitial();
-    }
-
     private void enviarMail()
     {
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
@@ -207,13 +183,6 @@ public class MainActivity extends AppCompatActivity {
         emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"markusrc11@gmail.com"});
         emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, nomUsuari);
         startActivity(Intent.createChooser(emailIntent, getResources().getString(R.string.send_email)));
-    }
-    private void requestNewInterstitial() {
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .build();
-
-        mInterstitialAd.loadAd(adRequest);
     }
 
     private void loadLanguage(){

@@ -1,57 +1,32 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'markem'
-            keyPassword 'losangeles24'
-            storeFile file('C:/Users/markus/Documents/WorkSpaceAndroidStudio/easymeal.jks')
-            storePassword 'losangeles24'
-        }
-    }
-    compileSdkVersion 25
+    compileSdkVersion 34
     buildToolsVersion "25.0.2"
+    useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.application.markus.easymeal"
         minSdkVersion 22
-        targetSdkVersion 25
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
-        release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-        debug {
-            signingConfig signingConfigs.config
-            zipAlignEnabled true
-        }
-    }
-    useLibrary 'org.apache.http.legacy'
     productFlavors {
     }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    //compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    //compile files('libs/mysql-connector-java-5.1.23-bin.jar')
-    compile files('libs/httpmime-4.2.5.jar')
-    compile files('libs/simpleftp.jar')
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:cardview-v7:25.3.1'
-    compile 'com.google.android.gms:play-services-ads:10.2.4'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    //compile 'com.android.support:recyclerview-v7:23.0.1'
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'de.hdodenhof:circleimageview:1.3.0'
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.5.1')
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    testImplementation 'junit:junit:4.13.2'
 }
