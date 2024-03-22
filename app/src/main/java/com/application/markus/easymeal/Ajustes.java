@@ -15,8 +15,9 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
-import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.ActionBar;
 
 import java.util.List;
 
@@ -115,7 +116,6 @@ public class Ajustes extends AppCompatPreferenceActivity {
     private void setupActionBar() {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            // Show the Up button in the action bar.
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
     }

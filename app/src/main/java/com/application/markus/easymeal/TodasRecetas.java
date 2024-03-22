@@ -2,7 +2,6 @@ package com.application.markus.easymeal;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 
@@ -52,11 +50,6 @@ public class TodasRecetas extends Fragment {
 
             }
         });
-
-
-        AdView mAdView = (AdView) view.findViewById(com.application.markus.easymeal.R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         return view;
     }
